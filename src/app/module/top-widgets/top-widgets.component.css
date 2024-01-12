@@ -1,0 +1,129 @@
+
+.container {
+    display: flex;
+    justify-content: space-between; /* Add space between boxes and chart */
+    align-items: flex-start; /* Align items to the top */
+  }
+.widget-container {
+    display: flex;
+    flex-direction: column; /* Arrange rows vertically */
+    align-items: flex-start; /* Align items to the left */
+  
+    .row {
+      display: flex;
+      justify-content: flex-start; /* Align items to the left */
+      align-items: flex-start; /* Align items to the top */
+      flex-wrap: wrap; /* Allow items to wrap to the next row */
+    }
+    .chart {
+        width: 900px; /* Set a fixed width for the chart */
+        height: 200px;
+        margin-left: 500px; /* Move chart to the right corner */
+        margin-top: 1000px; /* Add top margin to create space between boxes and chart */
+        margin-right: auto; /* Add right margin to create space between boxes and chart */
+        /* Add any other styles you need for the chart container */
+      }
+      .chartt-container{
+        display: flex;
+        align-items: center;
+        justify-self:flex-start;
+        height: 400px;
+        width: 400px;
+        margin-left: 850px; /* Move chart to the right corner */
+        margin-top: -400px; /* Add top margin to create space between boxes and chart */
+        margin-right: 300;
+        
+      }
+      .widget {
+      width: 400px;
+      height: 200px;
+      background-color:rgb(9, 9, 71);
+      color: white;
+      border-radius: 3px;
+      margin: 10px;
+      margin-left: -22px;
+      margin-right: 40px;
+      box-shadow: 5px 5px 5px #2b0468;
+      display: flex;
+      align-items: center;
+      padding: 40px;
+  
+      &.green,
+      &.yellow,
+      &.red,
+      &.blue {
+        background-color:rgb(9, 9, 71);
+      }
+  
+      @media only screen and (max-width: 1600px) {
+        width: 100px;
+      }
+      @media only screen and (max-width: 1500px) {
+        width: 275px;
+      }
+      @media only screen and (max-width: 1400px) {
+        width: 250px;
+      }
+      @media only screen and (max-width: 1200px) {
+        width: 225px;
+      }
+  
+      .icon {
+        width: 30px;
+        font-size: 60px;
+        text-align: center;
+  
+        @media only screen and (max-width: 1200px) {
+          font-size: 45px;
+        }
+      }
+   
+  
+      .value {
+        text-align: center;
+        width: 175px;
+        .top {
+          font-size: 30px;
+          @media only screen and (max-width: 1200px) {
+            font-size: 26px;
+          }
+        }
+        .bottom {
+          font-size: 20px;
+          margin-top: 10px;
+          @media only screen and (max-width: 1200px) {
+            font-size: 16px;
+          }
+        }
+      }
+    }
+    .val {
+      display: flex;
+      justify-content: space-between;
+    }
+    
+    .item {
+      width: 40%; /* Each item takes 50% width */
+      box-sizing: border-box;
+      text-align: center;
+    }
+    
+    .left {
+      float: left;
+    }
+    
+    .right {
+      float: right;
+    }
+    
+    
+    /* Add other styles as needed */
+    
+   
+
+/* <div class="chart-container">
+
+   <canvas  id="MyChart" >{{ chart }}</canvas>
+ </div> */
+  }
+  

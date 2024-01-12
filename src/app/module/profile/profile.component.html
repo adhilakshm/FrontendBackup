@@ -1,0 +1,176 @@
+
+<div class="wrapper">
+     
+
+    </div>
+
+<title>Customer Details</title>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Customer Details</title>
+</head>
+<!-- </head> -->
+<body>
+<div class="sidebar">
+ <ul class="nav-items">
+   <br>
+   <br>
+   <li class="nav-item">
+     <a routerLink="/module">Dashboard</a>
+   </li>
+   <br>
+   <br>
+   <li class="nav-item">
+     <a routerLink="/profile">Profile</a>
+   </li><br><br>
+   <li class="nav-item">
+     <a routerLink="/customer">Customer</a>
+   </li><br><br>
+   <li class="nav-item">
+     <a routerLink="/comp">Complaints</a>
+   </li><br><br>
+   <li class="nav-item">
+     <a routerLink="/">Logout</a>
+   </li>
+ </ul>
+</div>
+
+<div class="content" style="margin-left: 250px; padding: 20px;">
+
+
+
+ 
+    <div class="container py-5">
+     
+  
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="card mb-4">
+            <div class="card-body text-center" style="height: 300px;">
+              <img src="assets\\logo.png" alt="Your Image Description"
+
+                 style="width: 150px;">
+              <h5 class="my-3">Adhilakshmi R</h5>
+              <p class="text-muted mb-1">Full Stack Developer</p>
+              <p class="text-muted mb-4">Bay Area, India</p>
+             
+            </div>
+          </div>
+          <div class="card mb-4 mb-lg-0">
+            <div class="card-body p-0">
+              <ul class="list-group list-group-flush rounded-3">
+                <div class="profile-container">
+                  <label for="newPassword">Enter New Password:</label>
+                  <input type="password" id="newPassword" name="newPassword" [(ngModel)]="newPassword" [disabled]="!isInputEnabled" (blur)="onPasswordInputBlur()" />
+                  <button (click)="onEnableInput()">Change Password</button>&nbsp;
+                  <button (click)="onSubmit()" [disabled]="!isInputEnabled || newPassword.length <= 5">Update Password</button>
+                  <div *ngIf="!passwordUpdated && passwordTouched && newPassword.length <= 5" style="color: red;">Password must be greater than 5 characters</div>
+                  <div *ngIf="passwordUpdated" style="color: green;">Password updated successfully</div>
+                </div>
+                
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-8">
+          <div class="card mb-4">
+            <div class="card-body" style="height: 565px;">
+              <div class="row">
+                <div class="col-sm-3">
+                  <p class="mb-0">Full Name</p>
+                </div>
+                <div class="col-sm-9">
+                  <p class="text-muted mb-0" style="padding-right: 100px;">Adhilakshmi R</p>
+                </div>
+              </div>
+              <hr>
+              <div class="row">
+                <div class="col-sm-3">
+                  <p class="mb-0">Email</p>
+                </div>
+                
+                <div class="col-sm-9">
+                  <p class="text-muted mb-0">adhiragu1234@gmail.com</p>
+                </div>
+              </div>
+              <hr>
+              <div class="row">
+                <div class="col-sm-3">
+                  <p class="mb-0">Gender</p>
+                </div>
+                
+                <div class="col-sm-9">
+                  <p class="text-muted mb-0">Female</p>
+                </div>
+              </div>
+              <hr>
+              <div class="row">
+                <div class="col-sm-3">
+                  <p class="mb-0">Date of Birth</p>
+                </div>
+                
+                <div class="col-sm-9">
+                  <p class="text-muted mb-0">31-07-2001</p>
+                </div>
+              </div>
+              <hr>
+              <div class="row">
+                <div class="col-sm-3">
+                  <p class="mb-0">Place Born</p>
+                </div>
+                
+                <div class="col-sm-9">
+                  <p class="text-muted mb-0">Dharmapuri</p>
+                </div>
+              </div>
+              <hr>
+              <div class="row">
+                <div class="col-sm-3">
+                  <p class="mb-0">Country</p>
+                </div>
+                
+                <div class="col-sm-9">
+                  <p class="text-muted mb-0">India</p>
+                </div>
+              </div>
+              <hr>
+              <div class="row">
+                <div class="col-sm-3">
+                  <p class="mb-0">Address</p>
+                </div>
+                <div class="col-sm-9">
+                  <p class="text-muted mb-0">Bay Area, India</p>
+                </div>
+              </div>
+              <hr>
+              <div class="row">
+                <div class="col-sm-3">
+                  <p class="mb-0">Phone</p>
+                </div>
+                <div class="col-sm-9">
+                  <p class="text-muted mb-0">(+91)9360419011</p>
+                </div>
+              </div>
+              <hr>
+              <div class="row">
+                <div class="col-sm-3">
+                  <p class="mb-0">Mobile</p>
+                </div>
+                <div class="col-sm-9">
+                  <p class="text-muted mb-0">(+91)9360954246</p>
+                </div>
+              </div>
+              <hr>
+              <div class="row">
+                <div class="col-sm-3">
+                  <p class="mb-0">Postel Code</p>
+                </div>
+                <div class="col-sm-9">
+                  <p class="text-muted mb-0">635 303</p>
+                </div>
+              </div>
+              <hr>
+             
+          </div>
+         

@@ -1,0 +1,53 @@
+
+.wrapper {
+  width: 1170px;
+  margin: auto;
+}
+
+.nav-area {
+  float: right;
+  list-style: none;
+  margin-top: 30px;
+  margin-right: 100px;
+}
+.nav-area li {
+  display: inline-block;
+}
+.nav-area li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 5px 20px;
+  font-family: poppins;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+.nav-area li a:hover {
+  background: #fff;
+  color: #333;
+}
+.nav-items {
+  padding-top: 40px;
+}
+
+.nav-item {
+  padding: 25px 50px;
+  cursor: pointer;
+  @media only screen and (max-width: 1300px) {
+    padding: 25px 40px;
+  }
+  &:hover {
+    background-color: rgb(29, 128, 210);
+  }
+}
+
+.nav-item fa-icon {
+  margin-right: 10px;
+  font-size: 22px;
+}
+
+.nav-item span {
+  display: inline;
+  @media only screen and (max-width: 1300px) {
+    display: none;
+  }
+}

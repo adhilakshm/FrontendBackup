@@ -1,0 +1,124 @@
+.profile-card {
+  padding: 20px; /* Adjust padding as needed */
+  border-radius: 15px; /* Adjust border radius as needed */
+  background-color: #ffffff; /* Adjust background color as needed */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adjust box shadow as needed */
+}
+
+.profile-card .card-title {
+  font-size: 24px; /* Adjust font size as needed */
+}
+
+.profile-card .update-message {
+  margin-top: 10px; /* Adjust margin as needed */
+  color: green; /* Adjust color as needed */
+}
+
+
+
+
+
+.profile-container {
+  background-color:white ; /* Update with the correct path */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  color: #090808; /* Adjust text color for visibility based on your image */
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 0; /* Remove the previous margin */
+  height: 30vh; /* Set height to cover the entire viewport */
+}
+
+
+/* Rest of the styles... */
+
+  .profile-container h2 {
+    margin-bottom: 10px;
+  }
+  
+  .profile-container label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .profile-container input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .profile-container button {
+    padding: 10px 20px;
+    background-color: #337ab7;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    
+  }
+  
+  .profile-container button:hover {
+    background-color: #286090;
+  }
+  .wrapper {
+    width: 1170px;
+    margin: auto;
+  }
+  
+  .nav-area {
+    float: right;
+    list-style: none;
+    margin-top: 30px;
+    margin-right: -150px;
+  }
+  .nav-area li {
+    display: inline-block;
+  }
+  .nav-area li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 20px;
+    font-family: poppins;
+    font-size: 16px;
+    text-transform: uppercase;
+  }
+  .nav-area li a:hover {
+    background: #fff;
+    color: #333;
+  }
+   html, body {
+    background-color: #10072c;
+   color: white;
+   height: 100vh;
+   margin: 0;
+   padding: 30px;
+ }
+ .sidebar {
+   height: 100%;
+   width: 250px;
+   position: fixed;
+   top: 0;
+   left: 0;
+   background-color: #191436;
+   padding: 20px;
+   margin-right: 50px;
+ }
+ .nav-items {
+   list-style: none;
+   padding: 0;
+ }
+ .nav-item {
+   margin-bottom: 10px;
+ }
+ .nav-item a {
+ text-decoration: none;
+ color: white;
+ display: block;
+ text-align: center; /* Center-align the text */
+} 
+body{
+overflow-y: hidden; 
+}
+  

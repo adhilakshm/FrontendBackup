@@ -1,0 +1,65 @@
+<div class="container">
+  <div class="widget-container">
+   
+      <div class="row">
+      <div class="widget green">
+        <div class="icon">
+          <i class="fa fa-map-marker"></i>
+        </div>
+        <div class="value">
+  <!--         
+          <img src="assets\key.png" alt="Your Logo" class="logo"> -->
+          <div class="top">{{totalSubscribers}}</div>
+          <div class="bottom">Total Subscribers</div>
+          
+  
+        </div>
+      </div>
+     
+      <div class="widget yellow">
+        <div class="icon">
+          <i class="fa fa-shopping-cart"></i>
+        </div>
+        <div class="val">
+          <div class="item left">
+            <h3 class="top">{{ activeCount }}</h3>
+            <h4 class="bottom">Active</h4>
+          </div>
+          <div class="item right">
+            <h3 class="top">{{ inactiveCount }}</h3>
+            <h4 class="bottom">Inactive</h4>
+          </div>
+        </div>
+        
+        
+      </div>
+      </div>
+      
+      <div class="row">
+      <div class="widget blue">
+      
+        <div class="icon">
+          <i class="fa fa-map-marker"></i>
+        </div>
+        <div class="value">
+          <div class="top">{{averageRevenue| number:'1.2-2'}}</div>
+          <div class="bottom">Average Revenue</div>
+        </div>
+      </div>
+      <div class="widget blue">
+        <div class="icon">
+          <i class="fa fa-money"></i>
+        </div>
+        <div class="value">
+          <div class="top">{{totalRevenue}}</div>
+          <div class="bottom">Total Revenue</div>
+        </div>
+      </div>
+     </div>
+     <div class="chartt-container">
+      <canvas id="barChart" width="400" height="400"></canvas>
+         </div>
+    
+  </div>
+  
+    </div>
